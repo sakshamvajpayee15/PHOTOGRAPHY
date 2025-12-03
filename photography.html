@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Photographer Portfolio</title>
+  <style>
+    body {font-family: Arial; margin:0; background:#f2f2f2;}
+    header {background:#222; color:white; text-align:center; padding:15px;}
+    nav {background:#444; text-align:center; padding:8px;}
+    nav a {color:white; margin:10px; text-decoration:none; font-size:14px;}
+
+    section {padding:20px;}
+    h2 {text-align:center; margin-bottom:10px;}
+
+    .box {
+      background:white;
+      width:85%;
+      margin:8px auto;
+      padding:10px;
+      border:1px solid #ccc;
+      border-radius:5px;
+      font-size:14px;
+    }
+
+    /* Booking form */
+    label {display:block; margin-top:5px; font-size:13px;}
+    input, select, textarea {
+      width:100%; padding:5px; margin-top:3px;
+      border:1px solid #aaa; border-radius:3px; font-size:13px;
+    }
+    textarea {resize:vertical;}
+
+    button {
+      margin-top:8px;
+      background:#222; color:white;
+      border:none; padding:6px 10px;
+      border-radius:4px; cursor:pointer;
+      font-size:13px;
+    }
+
+    footer {
+      background:#222; color:white; text-align:center;
+      padding:8px; margin-top:15px; font-size:12px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>LensCraft Photography</h1>
+</header>
+
+<nav>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#book">Book a Session</a>
+</nav>
+
+<!-- PORTFOLIO / CATEGORIES -->
+<section id="portfolio">
+  <h2>Photography Categories</h2>
+
+  <div class="box">
+    <strong>Portrait Photography</strong>
+    <p>Individual portraits, family photos, professional headshots.</p>
+  </div>
+
+  <div class="box">
+    <strong>Landscape Photography</strong>
+    <p>Nature, travel, cityscapes and outdoor views.</p>
+  </div>
+
+  <div class="box">
+    <strong>Event Photography</strong>
+    <p>Weddings, parties, concerts and corporate events.</p>
+  </div>
+</section>
+
+<!-- BOOKING SECTION -->
+<section id="book">
+  <h2>Book a Session</h2>
+
+  <div class="box">
+    <p>Fill this form to request a photography session.</p>
+
+    <form>
+      <label>Your Name:</label>
+      <input type="text" required>
+
+      <label>Email:</label>
+      <input type="email" required>
+
+      <label>Phone:</label>
+      <input type="tel" required>
+
+      <label>Type of Session:</label>
+      <select required>
+        <option value="">-- Select --</option>
+        <option>Portrait</option>
+        <option>Landscape / Outdoor</option>
+        <option>Event</option>
+        <option>Other</option>
+      </select>
+
+      <label>Preferred Date:</label>
+      <input type="date">
+
+      <label>Details:</label>
+      <textarea rows="3" placeholder="Location, time, special requests..."></textarea>
+
+      <button type="submit">Send Request</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2025 LensCraft Photography
+</footer>
+
+</body>
+</html>
